@@ -1,0 +1,15 @@
+{
+    "name": "type-checker",
+    "version": "0.0.0",
+    "description": "\"simple type chech tools\"",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "nobkz",
+    "dependencies" : {
+        "chai" : "*",
+        "mocha" : "*"
+    },
+    "license": "ISC"
+}
