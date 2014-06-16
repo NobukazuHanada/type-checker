@@ -1,6 +1,6 @@
 {
     "name": "type-checker",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "\"simple type check tools\"",
     "main": "index.js",
     "scripts": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "http://github.com/NobukazuHanada/type-checker/tree/v0.0.0"
+        "url": "http://github.com/NobukazuHanada/type-checker/tree/v0.0.1"
     },
     "author": "nobkz",
     "dependencies" : {
