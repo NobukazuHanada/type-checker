@@ -1,5 +1,6 @@
 var typeChecker = require("../index.js");
-
+var chai = require("chai");
+var expect = chai.expect;
 
 describe("typecheck", function(){
     var types = {
@@ -23,15 +24,14 @@ describe("typecheck", function(){
                               "subject" : "math" });
     });
 
-    it("unsuccess check!", function(){
-        try{
-        typeCheck("user", { "id" : "sss" });
-        typeCheck("techer", { "user" : { "id" : "dfafda" },
-                              "subject" : "language" });
-        }
-        catch (e){
-            console.log(e);
-        }
+    it("unsuccess check!", function(){ 
+        expect(function(){
+            typeCheck("user", { "id" : "sss" });
+        }).to.throw(chai.AssertionError);
+        expect(function(){
+            typeCheck("techer", { "user" : { "id" : "dfafda" },
+                                  "subject" : "language" });
+        }).to.throw(chai.AssertionError);
     });
 
 });
